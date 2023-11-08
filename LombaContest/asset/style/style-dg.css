@@ -1,0 +1,259 @@
+/* NAVBAR  START*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.div {
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222327;
+  --main-color: #0084ff;
+}
+body {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 3px;
+}
+.logo span {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.navbar {
+  display: flex;
+}
+/* Aturan CSS untuk navbar saat di-scroll */
+header.scrolled {
+  background: #ffffff; /* Ganti dengan warna latar belakang hitam atau yang Anda inginkan */
+  color: #fff; /* Ganti dengan warna teks yang sesuai dengan latar belakang */
+  box-shadow: 0 10px 10px -5px rgba(36, 86, 223, 0.145); /* Menambahkan bayangan ketika di-scroll */
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a:active {
+  color: var(--main-color);
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+.user i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+.main a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  .navbar a {
+    display: block;
+    margin: 1px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  .navbar a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+  }
+  .navbar a.active {
+    color: var(--text-color);
+  }
+  .navbar.open {
+    right: 2%;
+  }
+}
+
+/* NAVBAR  end*/
+
+/* UI UX DESIGN TEXT START*/
+.center-text {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.center-text h1 {
+  font-size: 36px;
+  font-family: "montserrat" sans-serif;
+  font-weight: bold;
+}
+
+.center-text h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* UI UX DESIGN TEXT END*/
+
+/* ttng dan biaya pendaftran start*/
+.Content2 h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.Content2 p {
+  font-size: 20px;
+  font-style: normal;
+  margin-right: 140px;
+  margin-bottom: 70px;
+}
+
+.content-left {
+  flex: 1;
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.Content3 h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.blue-text {
+  color: rgb(0, 157, 255); /* Warna biru untuk Rp 35.000 */
+  font-size: 30px;
+}
+
+.black-text {
+  color: #000; /* Warna hitam untuk Umum */
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.content-left2 {
+  flex: 1;
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+/* button daftar sekarang dan lihat guide book */
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Jarak antara tombol */
+  margin-left: 70px;
+}
+
+.button-container button:last-child {
+  background-color: #fff; /* Ganti warna latar belakang menjadi putih */
+  color: #0084ff; /* Ganti warna teks menjadi warna lain, misalnya biru */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+  transition: background-color 0.5s; /* Transisi perubahan warna latar belakang */
+}
+
+.button-container button {
+  background-color: #0084ff; /* Warna latar belakang tombol biru */
+  color: #fff; /* Warna teks putih */
+  padding: 10px 20px; /* Ruang padding tombol */
+  border: none;
+  border-radius: 5px; /* Sudut bulat pada tombol */
+  cursor: pointer;
+  transition: background-color 0.5s; /* Transisi perubahan warna latar belakang */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+}
+
+.button-container button:hover {
+  background-color: #0056b3; /* Warna biru lebih gelap saat dihover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) ease; /* Menambahkan bayangan */
+}
+
+/* ttng dan biaya pendaftran start*/

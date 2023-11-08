@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="asset/style/style-home.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"
+        ><i class="ri-home-3-line"></i><span>CompeFest</span>
+      </a>
+
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#lombatext">Lomba</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="main">
+        <a href="login.html" class="user"><i class="ri-user-fill"></i>Sign in</a>
+        <a href="login.html">Register</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="Content">
+      <div class="content-left">
+        <h1>CompeFest</h1>
+        <p>Lomba CompeFest adalah sebuah lomba kostum yang terbuka untuk peserta dari seluruh Indonesia. Lomba ini diselenggarakan untuk memberikan wadah bagi para Front end, backend, & UI&UX Designer untuk menunjukkan kreativitas dan karyanya. </p>
+        <button>Baca Lebih Lanjut</button>
+      </div>
+      <div class="content-right">
+        <img class="gambar" src="asset/img/lalal.png" alt="Deskripsi Gambar Anda" />
+      </div>
+    </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="about-right">
+        <img class="about-gambar" src="asset/img/about-us.png" alt="zeus"/>
+    </div>
+    <div class="about-left">
+      <h2>About Us</h2>
+      <p>Website ini dibuat pada tahun 2023 , Website ini merupakan webiste pendaftaran lomba seperti UI&UX Design grafis , logika dasar dll AYOK IKUTI KESERUAN INI ! </p>
+    </div>
+    </div>
+    </div>
+
+    <div class="lombatext" id="lombatext">
+      <div>
+        <h1>LOMBA LOMBA </h1>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="asset/img/eek.png" alt="Card Image 1" />
+        <h2>UI UX DESIGN</h2>
+        <p>Competisi mengdesign UI&UX aplikasi</p>
+        <a href="lombaUIUX.html">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="asset/img/wawa.png" alt="Card Image 2" />
+        <h2>Design Graphic</h2>
+        <p>competisi memembuat webiste dengan bahasa php</p>
+        <a href="lombadg.html">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="asset/img/eek.png" alt="Card Image 3" />
+        <h2>Flutter </h2>
+        <p>Kompetisi membuat aplikasi dengan Flutter</p>
+        <a href="lombaflutt.html">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="asset/img/logic.png" alt="Card Image 3" />
+        <h2>Logika dasar</h2>
+        <p>competisi memembuat webiste dengan bahasa php</p>
+        <a href="login.html">Learn More</a>
+      </div>
+    </div>
+    
+
+
+    <section style="height: 100vh"></section>
+
+    <!-- JS LINK -->
+    <script src="asset/js/home-script.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header")
+        if (window.scrollY > 0) {
+          header.classList.add("scrolled")
+        } else {
+          header.classList.remove("scrolled")
+        }
+      })
+    </script>
+  </body>
+</html>

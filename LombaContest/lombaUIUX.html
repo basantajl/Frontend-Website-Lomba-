@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="asset/style/style-cardlomba.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"
+        ><i class="ri-home-3-line"></i><span>CompeFest</span>
+      </a>
+
+      <ul class="navbar">
+        <li><a href="Home.html" class="active">Home</a></li>
+        <li><a href="Home.html#about">About</a></li>
+        <li><a href="Home.html#lombatext">Lomba</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="main">
+        <a href="login.html" class="user"
+          ><i class="ri-user-fill"></i>Sign in</a
+        >
+        <a href="login.html">Register</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="Content">
+        <div class="center-text">
+          <h1>UI UX Design </h1>
+          <h2>Tingkat Umum - Individus</h2>
+        </div>
+
+    <div class="Content2">
+        <div class="content-left">
+          <h1>Tentang Kegiatan</h1>
+          <p>UI/UX (User Interface/User Experience) Competition merupakan salah satu perlombaan yang diselenggarakan oleh INFINITY 2023. Kompetisi ini bertujuan untuk merancang suatu sistem/produk yang berfokus pada kenyamanan dan kemudahan pengguna dalam menggunakan sistem/produk tersebut. Peserta diharapkan dapat menggabungkan aspek visual yang menarik dengan fungsionalitas yang mudah digunakan, sehingga menciptakan pengalaman yang optimal bagi pengguna.</p>
+        </div>
+
+
+    <div class="Content3">
+      <div class="content-left2">
+        <h1>Biaya pendaftaran</h1>
+        <h4><span class="blue-text">Rp35.000</span> <span class="black-text">untuk Umum</span></h4>
+      </div>
+      <div class="button-container">
+        <button><span>Daftar Sekarang</span></button>
+        <button><span>Lihat GuideBook</span></button>
+      </div>
+
+    <script src="asset/js/home-script.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header")
+        if (window.scrollY > 0) {
+          header.classList.add("scrolled")
+        } else {
+          header.classList.remove("scrolled")
+        }
+      })
+    </script>
+  </body>
+</html>
